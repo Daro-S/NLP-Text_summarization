@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: textSummarizer
+Version: 0.0.0
+Summary: A small python package for NLP app
+Home-page: https://github.com/Daro-S/NLP-Text_summarization
+Author: Daro-S
+Author-email: darosim.itdev@gmail.com
+Project-URL: Bug Tracker, https://github.com/Daro-S/NLP-Text_summarization/issues
+
+transformers
+transformers[sentencepiece]
+datasets
+sacrebleu
+rouge_score
+py7zr
+pandas
+nltk
+tqdm
+PyYAML
+matplotlib
+torch
+notebook
+boto3
+mypy-boto3-s3
+python-box==6.0.2
+ensure==1.0.2
+fastapi==0.78.0
+uvicorn==0.18.3
+Jinja2==3.1.2
+-e .
