@@ -1,13 +1,53 @@
-[2024-04-11 10:41:44,913: INFO: main: hello world]
-[2024-04-17 21:20:31,921: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-04-17 21:20:31,928: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-04-17 21:20:53,134: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-04-17 21:20:53,134: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-04-17 21:21:43,193: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-04-17 21:21:43,202: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-04-17 21:21:43,204: INFO: common: created directory at: artifacts]
-[2024-04-17 21:21:43,206: INFO: common: created directory at: artifacts/data_ingestion]
-[2024-04-17 21:21:46,283: INFO: 1434958058: artifacts/data_ingestion/data.zip download! with following info: 
+[2024-04-18 13:24:24,136: INFO: main: >>>>>> stage Data Ingestion Code started <<<<<<]
+[2024-04-18 13:24:24,136: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-18 13:24:24,136: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-18 13:24:24,136: INFO: common: created directory at: artifacts]
+[2024-04-18 13:24:24,136: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 10, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2024-04-18 13:25:40,117: INFO: main: >>>>>> stage Data Ingestion Code started <<<<<<]
+[2024-04-18 13:25:40,117: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-18 13:25:40,117: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-18 13:25:40,117: INFO: common: created directory at: artifacts]
+[2024-04-18 13:25:40,117: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "c:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 10, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2024-04-18 13:26:44,187: INFO: main: >>>>>> stage Data Ingestion Code started <<<<<<]
+[2024-04-18 13:26:44,187: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-18 13:26:44,187: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-18 13:26:44,187: INFO: common: created directory at: artifacts]
+[2024-04-18 13:26:44,187: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "c:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 11, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2024-04-18 13:29:54,903: INFO: main: >>>>>> stage Data Ingestion Code started <<<<<<]
+[2024-04-18 13:29:54,903: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-18 13:29:54,906: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-18 13:29:54,906: INFO: common: created directory at: artifacts]
+[2024-04-18 13:29:54,906: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\main.py", line 10, in <module>
+    data_ingestion.main()
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 11, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2024-04-18 13:31:59,914: INFO: main: >>>>>> stage Data Ingestion Code started <<<<<<]
+[2024-04-18 13:31:59,921: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-18 13:31:59,921: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-18 13:31:59,921: INFO: common: created directory at: artifacts]
+[2024-04-18 13:31:59,924: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-04-18 13:32:03,491: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
 Connection: close
 Content-Length: 7903594
 Cache-Control: max-age=300
@@ -18,52 +58,28 @@ Strict-Transport-Security: max-age=31536000
 X-Content-Type-Options: nosniff
 X-Frame-Options: deny
 X-XSS-Protection: 1; mode=block
-X-GitHub-Request-Id: AA86:17C796:2CCA7F:37266D:661FCB85
+X-GitHub-Request-Id: CA64:D8BFE:49CE04:5BDC6F:6620ABCF
 Accept-Ranges: bytes
-Date: Wed, 17 Apr 2024 14:21:39 GMT
+Date: Thu, 18 Apr 2024 06:31:55 GMT
 Via: 1.1 varnish
 X-Served-By: cache-qpg1249-QPG
 X-Cache: HIT
 X-Cache-Hits: 0
-X-Timer: S1713363699.902835,VS0,VE291
+X-Timer: S1713421915.300544,VS0,VE287
 Vary: Authorization,Accept-Encoding,Origin
 Access-Control-Allow-Origin: *
 Cross-Origin-Resource-Policy: cross-origin
-X-Fastly-Request-ID: 14493c94316ff542a1dd2a50dcb33108e9352273
-Expires: Wed, 17 Apr 2024 14:26:39 GMT
+X-Fastly-Request-ID: 908dc6a65529e9c08e76d9e48f6f48a563e6eeb4
+Expires: Thu, 18 Apr 2024 06:36:55 GMT
 Source-Age: 0
 
 ]
-[2024-04-17 21:36:24,921: INFO: main: >>>>>> stage Data Ingestion Code started <<<<<<]
-[2024-04-17 21:36:24,939: INFO: common: yaml file: config\config.yaml loaded successfully]
-[2024-04-17 21:36:24,953: INFO: common: yaml file: params.yaml loaded successfully]
-[2024-04-17 21:36:24,953: INFO: common: created directory at: artifacts]
-[2024-04-17 21:36:24,953: INFO: common: created directory at: artifacts/data_ingestion]
-[2024-04-17 21:36:42,372: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
-Connection: close
-Content-Length: 7903594
-Cache-Control: max-age=300
-Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
-Content-Type: application/zip
-ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
-Strict-Transport-Security: max-age=31536000
-X-Content-Type-Options: nosniff
-X-Frame-Options: deny
-X-XSS-Protection: 1; mode=block
-X-GitHub-Request-Id: AA86:17C796:2CCA7F:37266D:661FCB85
-Accept-Ranges: bytes
-Date: Wed, 17 Apr 2024 14:36:23 GMT
-Via: 1.1 varnish
-X-Served-By: cache-qpg1237-QPG
-X-Cache: HIT
-X-Cache-Hits: 0
-X-Timer: S1713364583.411173,VS0,VE287
-Vary: Authorization,Accept-Encoding,Origin
-Access-Control-Allow-Origin: *
-Cross-Origin-Resource-Policy: cross-origin
-X-Fastly-Request-ID: c559445107564d6fb39b2589f6f8bd6a1d77ecd5
-Expires: Wed, 17 Apr 2024 14:41:23 GMT
-Source-Age: 0
+[2024-04-18 13:32:03,638: INFO: main: >>>>>> stage Data Ingestion Code completed <<<<<<]
+[2024-04-18 13:32:03,638: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-04-18 13:32:03,646: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-18 13:32:03,647: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-18 13:32:03,647: INFO: common: created directory at: artifacts]
+[2024-04-18 13:32:03,647: INFO: common: created directory at: artifacts/data_validation]
+[2024-04-18 13:32:03,651: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
-]
-[2024-04-17 21:36:42,759: INFO: main: >>>>>> stage Data Ingestion Code completed <<<<<<]
+x==========x]
