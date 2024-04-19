@@ -180,3 +180,57 @@ Traceback (most recent call last):
   File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\vtextSummarization\lib\site-packages\transformers\training_args.py", line 1937, in _setup_devices
     raise ImportError(
 ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.21.0`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2024-04-19 14:15:22,051: INFO: config: PyTorch version 2.2.2 available.]
+[2024-04-19 14:15:22,331: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-19 14:15:22,331: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-19 14:15:22,335: INFO: common: created directory at: artifacts]
+[2024-04-19 14:15:22,338: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-04-19 14:16:32,491: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-19 14:16:32,499: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-19 14:16:32,500: INFO: common: created directory at: artifacts]
+[2024-04-19 14:16:32,500: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-04-19 14:21:01,846: INFO: config: PyTorch version 2.2.2 available.]
+[2024-04-19 14:21:02,146: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-19 14:21:02,146: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-19 14:21:02,154: INFO: common: created directory at: artifacts]
+[2024-04-19 14:21:02,156: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-04-19 14:23:20,244: INFO: config: PyTorch version 2.2.2 available.]
+[2024-04-19 14:23:20,498: INFO: stage_04_model_trainer: *******************]
+[2024-04-19 14:23:20,498: INFO: stage_04_model_trainer: >>>>>> stage Model Training stage started <<<<<<]
+[2024-04-19 14:23:20,501: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-19 14:23:20,501: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-19 14:23:20,501: INFO: common: created directory at: artifacts]
+[2024-04-19 14:23:20,501: INFO: common: created directory at: artifacts/model_trainer]
+[2024-04-19 14:23:27,532: ERROR: stage_04_model_trainer: Using the `Trainer` with `PyTorch` requires `accelerate>=0.21.0`: Please run `pip install transformers[torch]` or `pip install accelerate -U`]
+Traceback (most recent call last):
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 23, in <module>
+    obj.main()
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 16, in main
+    model_trainer_config.train()
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\src\textSummarizer\components\model_trainer.py", line 34, in train
+    trainer_args = TrainingArguments(
+  File "<string>", line 124, in __init__
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\vtextSummarization\lib\site-packages\transformers\training_args.py", line 1551, in __post_init__
+    and (self.device.type != "cuda")
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\vtextSummarization\lib\site-packages\transformers\training_args.py", line 2027, in device
+    return self._setup_devices
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\vtextSummarization\lib\site-packages\transformers\utils\generic.py", line 63, in __get__
+    cached = self.fget(obj)
+  File "C:\Users\Daro\OneDrive\Documents\Deep-Learning-Project\NLP-Text_summarization\vtextSummarization\lib\site-packages\transformers\training_args.py", line 1937, in _setup_devices
+    raise ImportError(
+ImportError: Using the `Trainer` with `PyTorch` requires `accelerate>=0.21.0`: Please run `pip install transformers[torch]` or `pip install accelerate -U`
+[2024-04-19 14:26:24,400: INFO: config: PyTorch version 2.2.2 available.]
+[2024-04-19 14:26:24,696: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-19 14:26:24,696: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-19 14:26:24,707: INFO: common: created directory at: artifacts]
+[2024-04-19 14:26:24,707: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-04-19 14:29:37,634: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-19 14:29:37,634: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-19 14:29:37,634: INFO: common: created directory at: artifacts]
+[2024-04-19 14:29:37,634: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-04-19 14:29:58,773: INFO: config: PyTorch version 2.2.2 available.]
+[2024-04-19 14:29:59,082: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-04-19 14:29:59,097: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-04-19 14:29:59,097: INFO: common: created directory at: artifacts]
+[2024-04-19 14:29:59,097: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-04-19 14:37:27,492: INFO: rouge_scorer: Using default tokenizer.]

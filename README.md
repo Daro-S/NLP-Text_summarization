@@ -14,3 +14,9 @@
 # Activate VENV
 
 .\vtextSummarization\Scripts\activate
+
+# DVC
+
+1. dvc init
+2. dvc repro
+3. dvc dag (to see the structure of the pipeline)
