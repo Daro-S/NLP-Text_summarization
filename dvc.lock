@@ -1,0 +1,83 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/textSummarizer/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 2526db8f3ada1634e08266b9e49fdce4
+      size: 1057
+    - path: src/textSummarizer/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: 36d5135ac47bb39553be7a701405d0f2
+      size: 925
+    outs:
+    - path: artifacts/data_ingestion/samsum_dataset
+      hash: md5
+      md5: 6955b4ac7cb77d44b1510853b6e4f753.dir
+      size: 10542802
+      nfiles: 10
+  data_validation:
+    cmd: python src/textSummarizer/pipeline/stage_02_data_validation.py
+    deps:
+    - path: artifacts/data_ingestion/samsum_dataset
+      hash: md5
+      md5: 6955b4ac7cb77d44b1510853b6e4f753.dir
+      size: 10542802
+      nfiles: 10
+    - path: config/config.yaml
+      hash: md5
+      md5: 2526db8f3ada1634e08266b9e49fdce4
+      size: 1057
+    - path: src/textSummarizer/pipeline/stage_02_data_validation.py
+      hash: md5
+      md5: 85c06803e82a6a0122d73a8fb5407fb5
+      size: 939
+    outs:
+    - path: artifacts/data_validation/status.txt
+      hash: md5
+      md5: 86e6a2f694c57a675b3e2da6b95ff9ba
+      size: 23
+  data_transformation:
+    cmd: python src/textSummarizer/pipeline/stage_03_data_transformation.py
+    deps:
+    - path: artifacts/data_validation/status.txt
+      hash: md5
+      md5: 86e6a2f694c57a675b3e2da6b95ff9ba
+      size: 23
+    - path: config/config.yaml
+      hash: md5
+      md5: 2526db8f3ada1634e08266b9e49fdce4
+      size: 1057
+    - path: src/textSummarizer/pipeline/stage_03_data_transformation.py
+      hash: md5
+      md5: ab5abaa208b53d5feb332ecd79fbb21b
+      size: 966
+    outs:
+    - path: artifacts/data_transformation/samsum_dataset
+      hash: md5
+      md5: db2925f84258c90479c557ee4caad74d.dir
+      size: 24998383
+      nfiles: 10
+  model_trainer:
+    cmd: python src/textSummarizer/pipeline/stage_04_model_trainer.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 2526db8f3ada1634e08266b9e49fdce4
+      size: 1057
+    - path: src/textSummarizer/pipeline/stage_04_model_trainer.py
+      hash: md5
+      md5: 70a3b115b80645b0a15d961619d0118a
+      size: 499
+    params:
+      params.yaml:
+        TrainingArguments.eval_steps: 500
+        TrainingArguments.evaluation_strategy: steps
+        TrainingArguments.gradient_accumulation_steps: 16
+        TrainingArguments.logging_steps: 10
+        TrainingArguments.num_train_epochs: 1
+        TrainingArguments.per_device_train_batch_size: 1
+        TrainingArguments.save_steps: 1000000.0
+        TrainingArguments.warmup_steps: 500
+        TrainingArguments.weight_decay: 0.01
